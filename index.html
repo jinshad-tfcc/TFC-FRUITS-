@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>TFC FRUITS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #fefefe;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    header {
+      background: linear-gradient(to right, #ff6f61, #ffa07a);
+      padding: 60px 20px;
+      text-align: center;
+      color: white;
+    }
+
+    header h1 {
+      font-size: 3em;
+      margin-bottom: 10px;
+    }
+
+    nav {
+      background-color: #ff6f61;
+      text-align: center;
+      padding: 12px 0;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 20px;
+      font-weight: bold;
+    }
+
+    nav a:hover {
+      text-decoration: underline;
+    }
+
+    .container {
+      max-width: 1100px;
+      margin: 30px auto;
+      padding: 0 20px;
+    }
+
+    section {
+      margin-bottom: 40px;
+    }
+
+    h2 {
+      color: #ff6f61;
+      margin-bottom: 15px;
+      font-size: 2em;
+    }
+
+    .fruit-list {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+      gap: 15px;
+    }
+
+    .fruit-item {
+      padding: 15px;
+      background-color: #fff3e0;
+      border-radius: 8px;
+      border: 1px solid #ffe0b2;
+      text-align: center;
+      font-weight: bold;
+      color: #d84315;
+    }
+
+    .services ul {
+      list-style: disc inside;
+      padding-left: 10px;
+    }
+
+    .contact p, .contact a {
+      margin: 5px 0;
+      color: #333;
+    }
+
+    .whatsapp-buttons {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .whatsapp-buttons a {
+      text-decoration: none;
+      background-color: #25d366;
+      color: white;
+      padding: 10px;
+      border-radius: 8px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-weight: bold;
+    }
+
+    .whatsapp-buttons a:hover {
+      background-color: #1ebc59;
+    }
+
+    .whatsapp-buttons i {
+      margin-right: 8px;
+    }
+
+    footer {
+      background-color: #ff6f61;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+
+    @media (max-width: 600px) {
+      .whatsapp-buttons {
+        flex-direction: column;
+      }
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>TFC FRUITS</h1>
+    <p>Freshness Delivered Daily</p>
+  </header>
+
+  <nav>
+    <a href="#home">Home</a>
+    <a href="#about">About</a>
+    <a href="#fruits">Fruits</a>
+    <a href="#services">Services</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <div class="container">
+    
+    <section id="home">
+      <h2>Home</h2>
+      <p>Welcome to <strong>TFC FRUITS</strong>, your trusted source for high-quality, farm-fresh fruits. We offer a wide selection of local and exotic varieties — always fresh, always delicious!</p>
+    </section>
+
+    <section id="about">
+      <h2>About Us</h2>
+      <p>Based in <strong>Vengara, Gandidas Padi, Malappuram</strong>, we’re committed to serving premium fruits with fast service, clean packaging, and consistent quality. Our passion is to keep your health and taste buds satisfied!</p>
+    </section>
+
+    <section id="fruits">
+      <h2>Fruits Available</h2>
+      <div class="fruit-list">
+        <div class="fruit-item">Apple</div>
+        <div class="fruit-item">Banana</div>
+        <div class="fruit-item">Mango</div>
+        <div class="fruit-item">Grapes</div>
+        <div class="fruit-item">Pineapple</div>
+        <div class="fruit-item">Papaya</div>
+        <div class="fruit-item">Orange</div>
+        <div class="fruit-item">Watermelon</div>
+        <div class="fruit-item">Guava</div>
+        <div class="fruit-item">Pomegranate</div>
+        <div class="fruit-item">Strawberry</div>
+        <div class="fruit-item">Dragon Fruit</div>
+        <div class="fruit-item">Lychee</div>
+        <div class="fruit-item">Kiwi</div>
+        <div class="fruit-item">Chikoo</div>
+        <div class="fruit-item">Pear</div>
+        <div class="fruit-item">Plum</div>
+        <div class="fruit-item">Fig</div>
+        <div class="fruit-item">Muskmelon</div>
+        <div class="fruit-item">Blueberry</div>
+        <div class="fruit-item">...and more!</div>
+      </div>
+    </section>
+
+    <section id="services" class="services">
+      <h2>Our Services</h2>
+      <ul>
+        <li>Daily home delivery of fresh fruits</li>
+        <li>Customized fruit baskets for gifting</li>
+        <li>Bulk supply for events and stores</li>
+        <li>Seasonal fruit packs</li>
+      </ul>
+    </section>
+
+    <section id="contact" class="contact">
+      <h2>Contact Us</h2>
+      <p>Phone: <a href="tel:+919388128659">9388128659</a>, <a href="tel:+918129632798">8129632798</a></p>
+
+      <div class="whatsapp-buttons">
+        <a href="https://wa.me/919388128659" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp (9388128659)
+        </a>
+        <a href="https://wa.me/918129632798" target="_blank">
+          <i class="fab fa-whatsapp"></i> Chat on WhatsApp (8129632798)
+        </a>
+      </div>
+    </section>
+
+  </div>
+
+  <footer>
+    <p>&copy; 2025 TFC FRUITS. All rights reserved.</p>
+  </footer>
+
+</body>
+</html>
